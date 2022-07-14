@@ -10,6 +10,7 @@ struct Point {
 
     struct { double x, y, z; };
     double p[3];
+    int idx = 1;
 
     inline Point operator*(const Point& v) const { return Point{ x * v.x, y * v.y, z * v.z }; }
     inline Point operator*(float a) const { return Point{ x * a, y * a, z * a }; }

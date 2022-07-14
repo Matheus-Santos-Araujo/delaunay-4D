@@ -209,7 +209,9 @@ void keyboard(unsigned char key, int /*x*/, int /*y*/) {
 		break;
 	case('x'):
 		fourd = false;
-		loader("mywind1.obj");
+		// Descomentar modelo .obj 3D desejado
+		//loader("mywind1.obj");
+		loader("cube.obj");
 		hulls = convexhull(objects);
 		tri = !tri;
 		break;
