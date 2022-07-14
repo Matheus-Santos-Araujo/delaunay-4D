@@ -254,6 +254,43 @@ struct PolygonT {
 				ftriangleList.erase(remove(ftriangleList.begin(), ftriangleList.end(), n0), ftriangleList.end());
 			}
 			// Main Loop ----------------------------
+			
+			//std::fstream arquivo;
+			//arquivo.open("polygon.obj", std::ios::trunc | std::ios::out);// | ios::in);
+
+			//arquivo << std::endl << "DELAUNAY 3D" << std::endl << std::endl;
+			//arquivo << std::endl;
+
+			//arquivo << "PONTOS" << std::endl;
+
+			//long int tam = 0;
+			//for (std::list< std::list<Point*> >::iterator iter = listObj.begin(); iter != listObj.end(); iter++)
+			//	tam += (*iter).size();
+
+			//arquivo << tam << std::endl;
+
+			//for (vector<Point*>::iterator iter = pointvector.begin(); iter != pointvector.end(); iter++) {
+			//	for (std::vector<Point*>::iterator it = (*iter).begin(); it != (*iter).end(); it++) {
+			//		arquivo << (*it)->x << "\t" << (*it)->y << "\t" << (*it)->z << "\t";
+			//		arquivo << std::endl;
+			//	}
+			//}
+
+			//arquivo << std::endl;
+			//arquivo << pointvector.size() << std::endl;
+
+			//int id = 1;
+
+			//for (std::vector<Triangle*>::iterator it = ftriangleList.begin(); it != ftriangleList.end(); it++)  {
+			//	arquivo << id << "\t";
+			//	id++;
+			//	for (unsigned int i = 0; i < (*it)->numPoints(); i++) {
+			//		arquivo << (*it)->getPoint(i)->getId() << "\t";
+			//	}
+			//	arquivo << std::endl;
+			//}
+
+
 			polygon.push_back(t);
 
 			pointvector.clear();
